@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="../css/hero.css">
     <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
     <link rel="icon" type="image/x-icon" href="img/beer.png" />
+    <link rel="stylesheet" href="styles.css">
     <style>
     .columns:nth-child(2)
     {margin-top: -10rem;}
@@ -32,15 +33,18 @@
         </div>
       </div>
     </section>
-
+<div id="carritoDeCompras">
     <p class="buttons">
       <button class="button is-success">
         <span class="image is-small">
-          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="icon">
+            <i class="fa-solid fa-cart-shopping"></i> <!--No se ve el carrito de compras -->
+          </span>
         </span>
         <span>Ir al carrito</span>
       </button>
     </p>
+</div>
 
 
 
@@ -50,7 +54,9 @@
         <span class="tag is-primary">Nuevo</span> Ya contamos con envio a domicilio.
       </p>
     </div>
-    <section class="container">
+
+    <!--Incio de las tarjetas-->
+    <div class="container">
       <div class="columns features">
         <div class="column is-4">
           <div class="card is-shady">
@@ -64,12 +70,12 @@
                 <h4>Cerveza Macanuda <br>de cerveceria Hércules</h4>
                 <p>Hércules Macanuda es una cerveza oscura, de amargor ligero, poco alcohólica con notas a cacao y café con sabores que recuerdan caramelo, nueces y un poco de plátano. Elaborada con maltas y lúpulos ingleses.</p>
                 <span class="button is-link modal-button">Reseñas</span>
-                <span class="button is-link modal-button">comprar</span>
+                <span class="button is-link modal-button">Comprar</span>
               </div>
             </div>
           </div>
         </div>
-      </div>        
+        
         <div class="column is-4">
           <div class="card is-shady">
             <div class="card-image">
@@ -81,12 +87,34 @@
               <div class="content">
                 <h4>Hombre pajaro <br>de cerveceria Hercules</h4>
                 <p>Cerveza de centeno sin filtrar, de fermentación lager elaborada con malta, lúpulo y levadura alemanes..</p>
-                <span class="button is-link modal-button">ver mas</span>
+                <span class="button is-link modal-button">Reseñas</span>
+                <span class="button is-link modal-button">Comprar</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-4">
+          <div class="card is-shady">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://cdn.shopify.com/s/files/1/0051/7072/4928/products/Huracan_720x720_9d071369-b69e-4981-a012-20f8ad5f6bb6_720x720.png?v=1604348807" alt="butterfly image" class="modal-button" data-target="modal-image3">
+              </figure>
+            </div>
+            <div class="card-content  modal-button" data-target="modal-card2">
+              <div class="content">
+                <h4>Huracan<br>de cerveceria Hercules</h4>
+                <p>Cerveza de centeno sin filtrar, de fermentación lager elaborada con malta, lúpulo y levadura alemanes..</p>
+                <span class="button is-link modal-button">Reseñas</span>
+                <span class="button is-link modal-button">Comprar</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      
+    </div>
     </section>
     <footer>
       <section class="section">
@@ -311,11 +339,11 @@
       <button class="modal-close is-large" aria-label="close"></button>
     </div>
     <!-- Image modal-->
-    <div id="modal-image" class="modal modal-fx-superScaled">
+    <div id="modal-image3" class="modal modal-fx-superScaled">
       <div class="modal-background"></div>
       <div class="modal-content  is-image">
         <!-- content -->
-        <img src="https://res.cloudinary.com/ameo/image/upload/v1568711475/pexels-photo-1302883_fjje0f.jpg" alt="Placeholder image">
+        <img src="https://cdn.shopify.com/s/files/1/0051/7072/4928/products/Huracan_720x720_9d071369-b69e-4981-a012-20f8ad5f6bb6_720x720.png?v=1604348807" alt="Placeholder image">
         <!--     <img src="https://source.unsplash.com/zFrUz_tNjCY" alt="placeholder">
         -->    <!-- end content -->
       </div>
