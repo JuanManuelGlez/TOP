@@ -33,19 +33,9 @@
         </div>
       </div>
     </section>
-<div id="carritoDeCompras">
-    <p class="buttons">
-      <button class="button is-success">
-        <span class="image is-small">
-          <span class="icon">
-            <i class="fa-solid fa-cart-shopping"></i> <!--No se ve el carrito de compras -->
-          </span>
-        </span>
-        <span>Ir al carrito</span>
-      </button>
-    </p>
-</div>
-
+    <button class="js-modal-trigger" data-target="modal-js-example">
+      Ir al carrito
+    </button> 
 
 
 
@@ -70,7 +60,7 @@
                 <h4>Cerveza Macanuda <br>de cerveceria Hércules</h4>
                 <p>Hércules Macanuda es una cerveza oscura, de amargor ligero, poco alcohólica con notas a cacao y café con sabores que recuerdan caramelo, nueces y un poco de plátano. Elaborada con maltas y lúpulos ingleses.</p>
                 <span class="button is-link modal-button">Reseñas</span>
-                <span class="button is-link modal-button">Comprar</span>
+                <span id="comprar_macanuda" class="button is-link modal-button">Comprar</span>
               </div>
             </div>
           </div>
@@ -88,7 +78,7 @@
                 <h4>Hombre pajaro <br>de cerveceria Hercules</h4>
                 <p>Cerveza de centeno sin filtrar, de fermentación lager elaborada con malta, lúpulo y levadura alemanes..</p>
                 <span class="button is-link modal-button">Reseñas</span>
-                <span class="button is-link modal-button">Comprar</span>
+                <span id ="comprar_pajaro" class="button is-link modal-button">Comprar</span>
               </div>
             </div>
           </div>
@@ -106,7 +96,7 @@
                 <h4>Huracan<br>de cerveceria Hercules</h4>
                 <p>Hércules Huracán es una cerveza que genera una explosión de lúpulo en su vaso. Esta cerveza usa más de 30 kg de lúpulo por sólo 1,700 Lt de cerveza, lo que se expresa en una presencia muy marcada a notas de mango, bayas y cítricos.</p>
                 <span class="button is-link modal-button">Reseñas</span>
-                <span class="button is-link modal-button">Comprar</span>
+                <span id="comprar_huracan" class="button ">Comprar</span>
               </div>
             </div>
           </div>
@@ -339,7 +329,7 @@
       <button class="modal-close is-large" aria-label="close"></button>
     </div>
     <!-- Image modal-->
-    <div id="modal-image3" class="modal modal-fx-superScaled">
+    <div id="modal-image3" class="modal modal-fx-3dSlit">
       <div class="modal-background"></div>
       <div class="modal-content  is-image">
         <!-- content -->
@@ -360,5 +350,20 @@
         OverlayScrollbars(document.querySelectorAll("body"), { });
         });
         </script>  
+        <script src="script.js"></script>
+
+
+        <div id="modal-js-example" class="modal">
+          <div class="modal-background"></div>
+        
+          <div class="modal-content">
+            <div class="box">
+              <p id="carrito"> </p><br>
+              <span id ="comprar_pajaro" class="button is-link modal-button">Comprar</span>
+            </div>
+          </div>
+        
+          <button class="modal-close is-large" aria-label="close"></button>
+        </div>
   </body>
 </html>
