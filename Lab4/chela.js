@@ -19,7 +19,31 @@ function out2(){
     
 }
 
+
+/*
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
+
+    console.log(getRandomInt)
   }
+*/
+
+function sumas(){
+    let a = 10;
+    let b = 20;
+    let resp = prompt("Cuanto es " + a + "+ "+ b );
+    let sum = a+b;
+    let result;
+
+    if (sum === resp){
+        result="Felicidades, estas en lo correcto";
+    else{
+        result="Usa una calculadora por que no sabes sumar papito, la respuesta era "+ resp;
+    }
+    }
+
+}
+
+sumas();
+  
 
