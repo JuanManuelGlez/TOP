@@ -15,9 +15,7 @@ function outp1() {
 
 //problema 2
 
-function out2(){
-    
-}
+
 
 
 /*
@@ -29,18 +27,26 @@ function getRandomInt(min, max) {
 */
 
 function sumas(){
-    let a = 10;
-    let b = 20;
+    let a = generateRandomInteger(100);
+    let b = generateRandomInteger(100);
     let resp = prompt("Cuanto es " + a + "+ "+ b );
     let sum = a+b;
     let result;
 
-    if (sum === resp){
+    if (sum == resp){
         result="Felicidades, estas en lo correcto";
+    }
     else{
-        result="Usa una calculadora por que no sabes sumar papito, la respuesta era "+ resp;
+        result="Lo siento pero estas mal :(  la respuesta era "+ sum + " y tu pusiste " + resp;
+
     }
-    }
+    document.getElementById("ej2").innerHTML=result;
+
+}
+
+
+function generateRandomInteger(max) {
+    return Math.floor(Math.random() * max) + 1;
 
 }
 
