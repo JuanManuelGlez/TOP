@@ -14,18 +14,6 @@ function outp1() {
 }
 
 //problema 2
-
-
-
-
-/*
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
-
-    console.log(getRandomInt)
-  }
-*/
-
 function sumas(){
     let a = generateRandomInteger(100);
     let b = generateRandomInteger(100);
@@ -50,6 +38,35 @@ function generateRandomInteger(max) {
 
 }
 
-sumas();
+
+// Problema 3
+
+
+function contador(arreglo){
+
+
+    let cero=0;
+    let pos=0;
+    let neg=0;
+    let resultado;
+
+    for (let i = 0; i < arreglo.length; i++){
+        if (arreglo[i]==0){
+            cero+=1;
+        }
+        else if(arreglo[i]>0){
+            pos+=1;
+        }
+        else{
+            neg+=1;
+        }
+    }
+
+    resultado="tuviste "+ cero + " ceros, "+ pos+" numeros positivos y "+ neg + " numeros negativos";
+    document.getElementById("ej3").innerHTML=resultado;
+}
+
+let arreglo=[8,5,5,-5,-4,0,0,0,-5,5,8,0];
+contador(arreglo);
   
 
