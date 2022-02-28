@@ -68,5 +68,52 @@ function contador(arreglo){
 
 let arreglo=[8,5,5,-5,-4,0,0,0,-5,5,8,0];
 contador(arreglo);
-  
 
+//Problema 4
+
+function matias(matrix){
+    let r ="<table>";
+    let suma=0;
+    for (let i =0; i<matrix.length; i++){
+
+        r+= "<tr><td> El promedio de la fila numero es: " +(i+1)+ "</td><td>";
+        for (var j =0; j<matrix[i].length; j++){
+            suma+=matrix[i][j];
+        }
+        r += (suma/(j+1)).toFixed(2) + "</td></tr>";
+        suma=0;
+    }
+
+    r+= "</table>";
+
+    
+    document.getElementById("ej4").innerHTML=r;
+}
+
+
+
+
+
+function a (){
+    let matrix =[[5,1,4,2,3],[8,9,5,2,1],[4,7,8,9,44,7,1,0],[1,2,3,4,5,6]];
+    matias(matrix);
+}
+
+
+
+
+//Problema 5
+
+function inversionista(num){
+    let r="";
+    for ( let i =(num.length-1); i>-1; i--){
+        r+= num[i];
+
+    }
+    document.getElementById("ej5").innerHTML=r;
+}
+
+function b (){
+    let num = prompt("Escribe un numero para invertirlo ");
+    inversionista(num);
+}
