@@ -15,7 +15,7 @@ var suma = 0;
 console.log("El promedio del siguiente array: [5000, 60, 90, 100, 10, 20, 10000, 0, 120, 2000, 340, 1000, 50]");
 for (let item of arreglo) 
     suma = suma + item;
-} 
+
 console.log(suma/arreglo.length);
 
 console.log("Obtener la raíz cuadrada de cada item en el siguiente arreglo: [5000, 60, 90, 100, 10, 20, 10000, 0, 120, 2000, 340, 1000, 50]");
