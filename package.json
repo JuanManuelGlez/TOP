@@ -1,0 +1,19 @@
+{
+  "name": "top",
+  "version": "1.0.0",
+  "description": "Lab 10",
+  "main": "index.js",
+  "scripts": {
+    "test": "divdev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanManuelGonzalezA00572003/TOP.git"
+  },
+  "author": "Chosno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanManuelGonzalezA00572003/TOP/issues"
+  },
+  "homepage": "https://github.com/juanManuelGonzalezA00572003/TOP#readme"
+}
